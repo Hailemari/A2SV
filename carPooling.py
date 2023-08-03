@@ -2,8 +2,7 @@ class Solution:
     def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
         passengersTimeline = [0] * 1001
 
-        for trip in trips:
-            passengers, start, end = trip
+        for passengers, start, end in trips:
             passengersTimeline[start] += passengers
             passengersTimeline[end] -= passengers
 

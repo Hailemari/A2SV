@@ -7,7 +7,7 @@
 class Solution:
     def averageOfSubtree(self, root: TreeNode) -> int:
         result = 0
-
+        
         def postOrder(node):
             nonlocal result
 
@@ -27,3 +27,5 @@ class Solution:
 
         postOrder(root)
         return result
+
+        
